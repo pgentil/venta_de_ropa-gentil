@@ -1,11 +1,6 @@
 html{
     font-size: 62.5%;
 }
-
-/*{
-    border: 1px solid rgb(255, 255, 255);
-}*/
-
 /*------------------------------------------------------------------
 @font-face
 ------------------------------------------------------------------*/
@@ -68,13 +63,17 @@ body{
     font-weight:normal;
     font-style:normal;
     background-image: url(../imgs/Untitled\ Design.jpeg);
-    background-attachment: fixed;
+    background-size: cover;
+    background-attachment:fixed;
     color: white;
     margin: 0;
     overflow-x: hidden;
-    height: auto;
-    width: 100vw;
     /*border: 2px solid rgb(255, 255, 255);*/
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
 }
 
 ::-webkit-scrollbar {
@@ -82,7 +81,7 @@ body{
   }
   
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: black; 
   }
    
   ::-webkit-scrollbar-thumb {
@@ -96,7 +95,6 @@ body{
 /*------------------------------------------------------------------
 ETIQUETAS GENERALES
 ------------------------------------------------------------------*/
-
 p, td{
     font-family: 'aileronultralight', sans-serif;
     font-weight: normal;
@@ -135,15 +133,10 @@ HEADER/NAVEGATION
 .header{
     display: flex;
     flex-direction: row;
-    height: 15rem;
+    height: auto;
     justify-content: space-evenly;
     align-items: center;
-    /*border: 2px solid rgb(255, 255, 255);*/ 
     background-color: black;
-    /*border-bottom: 5px solid rgb(88, 87, 87);
-    border-bottom-left-radius: 10px; 
-    border-bottom-right-radius: 10px;*/
-    z-index: 1;
 }
 
 /*.header__logo--position{
@@ -151,13 +144,15 @@ HEADER/NAVEGATION
 }*/
 
 .header__logo--image{
-    width: 100%;
+    width: auto;
     height: 100%;
+
 }
 
 .header__logo--position{
     height: 70%;
     align-content: center;
+    text-align: center;
 }
 
 .navegacion{
@@ -166,7 +161,7 @@ HEADER/NAVEGATION
     justify-content:space-evenly;
     flex: 0.95;
 
-    /*width: 109.4rem;*/
+    width: auto;
     /*background-color: chartreuse;*/
 }
 
@@ -223,6 +218,7 @@ HEADER/NAVEGATION
     padding: 0;
     display: none;
     font-size: 80%;
+    
 }
 
 .articulos__item{
@@ -722,13 +718,10 @@ media quarys
     .header{
         flex-wrap: nowrap;
         flex-direction: column;
-        height: 15vh;
-    }
-    .header{
-        height: 15vh;
+        height: auto;
     }
     .navegacion{
-        height: 60px;
+        height: auto;
         align-self: stretch;
     }
     .navegacion__buscador{
@@ -872,11 +865,8 @@ media quarys
     }
     
     .header__logo--position{
-        width:7rem;
+        width:auto;
         height: auto;
-    }
-    .navegacion{
-        height: 3rem;
     }
 }
 

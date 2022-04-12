@@ -62,7 +62,7 @@ body{
     font-family: 'aileronlight', sans-serif;
     font-weight:normal;
     font-style:normal;
-    background-image: url(../imgs/Untitled\ Design.jpeg);
+    background-image: url(../imgs/background.jpeg);
     background-size: cover;
     background-attachment:fixed;
     color: white;
@@ -105,7 +105,7 @@ ul, ol{
     list-style-type: none;
 }
 
-footer a{
+.footer a{
     color: rgb(100, 149, 237);
     /* rgb(100, 149, 237) */
 }

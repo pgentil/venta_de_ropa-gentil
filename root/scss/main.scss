@@ -1,14 +1,12 @@
 
-//variables globales
-$font-default: normal normal 1.6rem 'aileronlight' ;
-$body-background: fixed url(../imgs/background.jpeg) center/cover;
-$margin-main: 3% 5% 0 5%;
-$responsive-img-width:;
+@import 'variables';
+@import 'mixins';
 
-//html
 html{
     font-size: 62.5%;
 }
+
+
 
 //font
 @font-face {
@@ -35,19 +33,17 @@ body{
 //scrollbar
 ::-webkit-scrollbar {
     width: 10px;
+    &-track{
+        background: black;
+    }
+    &-thumb{
+        background: #888;
+        &:hover{
+            background: #555;
+        }
+    }
 }
   
-::-webkit-scrollbar-track {
-    background: black; 
-}
-   
-::-webkit-scrollbar-thumb {
-    background: #888; 
-}
-  
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
 
 //etiquetas generales
 ul, ol{
@@ -67,10 +63,82 @@ main{
     align-items: center;
     background-color: black;
 }
+
+.header__logoImage{
+    @include size(auto, 100%)
+}
+.header__logoContainer{
+    height: 70%;
+}
+
+.navegacion{
+    align-self: stretch;
+    align-items: center;
+    height: 15vh;
+    a{
+        text-decoration: none;
+        color:white ;
+    }
+    &__lista{
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        position: relative;
+    }
+    &__item{
+        display: inline-block;
+        @include size(25%, auto);
+        a{
+            @include size(100%, auto);
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            transition: 1s;
+            &:hover{
+                font-size: larger;
+                border: none;
+                border-bottom: 2px solid white;
+            }
+        }   
+    }
+    &__buscador{
+        border: none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        background-color: rgba(255, 0, 0, 0);
+        height: auto;
+        color: white;
+        width: 100%;
+    }
+    &__carrito{
+        position: relative;
+        margin: 0, 1rem, 0, 1rem;
+    }
+}
+.navegacionArticulos{
+    &__subsecciones{
+        width: 25%;
+        position: absolute;
+        padding: 0;
+        display: none;
+        font-size: 80%
+    }
+    &__item{
+        width:100%;
+        margin-top: 1rem;
+    }
+    &:hover .navegacionArticulos__subsecciones{
+        display: block;
+        z-index: 2;
+        background-color: #000000;
+    }
+} 
+
 //footer
 .footer{
     a{
-        color: rgb(100, 149, 237);
+        color: rgb(83, 109, 156);
         /* rgb(100, 149, 237) */
     }
 }

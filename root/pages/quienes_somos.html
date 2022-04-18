@@ -7,113 +7,115 @@
     <title>Quienes somos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="../imgs/favicon-32x32.png">
-    <link rel="stylesheet" href="../css/hola.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <header class="header container-fluid">
-        <div class="header__logo--position row"> 
-            <img src="../imgs/favicon.jpg" alt="logo" class="header__logo--image">  
-        </div>
-        <nav class="navegacion row gx-5">
-            <div class="dropdown display_none_md col-10 offset-1">
-                <button type="button" class="btn btn-color dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                    <!--    -->
-                    Menu
-                </button>    
-                <ul class="dropdown-menu">
-                    <li class=" dropdown-item"><a href="../index.html">Inicio</a></li>
-                    <li class="dropdown-item">
-                        <a href="articulos.html">Artículos</a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item"><a href="articulos.html#buzos"> Buzos</a></li>
-                            <li class="dropdown-item"><a href="articulos.html#remeras"> Remeras</a></li>
+    <div class="container-fluid">
+        <header class="header container-fluid">
+            <div class="header__logoContainer row"> 
+                <img src="../imgs/favicon.jpg" alt="logo" class="header__logoImage">  
+            </div>
+            <nav class="navegacion row gx-5">
+                <div class="dropdown display_none_md col-10 offset-1">
+                    <button type="button" class="btn btn-color dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                        <!--    -->
+                        Menu
+                    </button>    
+                    <ul class="dropdown-menu">
+                        <li class=" dropdown-item"><a href="../index.html">Inicio</a></li>
+                        <li class="dropdown-item">
+                            <a href="./articulos.html">Artículos</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="./articulos.html#buzos"> Buzos</a></li>
+                                <li class="dropdown-item"><a href="./articulos.html#remeras"> Remeras</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-item"><a href="./contacto.html">Contacto</a></li>
+                        <li class="dropdown-item"><a href="./quienes_somos.html">Quienes somos</a></li>
+                    </ul>
+                </div>
+                <ul class="navegacion__lista display_none_sm col-md-7">
+                    <li class="navegacion__item"><a href="../index.html">Inicio</a></li>
+                    <li class="navegacion__item navegacionArticulos">
+                        <a href="./articulos.html">Artículos</a>
+                        <ul class="navegacionArticulos__subsecciones">
+                            <li class="navegacionArticulos__item"><a href="./articulos.html#buzos"> Buzos</a></li>
+                            <li class="navegacionArticulos__item"><a href="./articulos.html#remeras"> Remeras</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown-item"><a href="contacto.html">Contacto</a></li>
-                    <li class="dropdown-item"><a href="quienes_somos.html">Quienes somos</a></li>
+                    <li class="navegacion__item"><a href="./contacto.html">Contacto</a></li>
+                    <li class="navegacion__item"><a href="./quienes_somos.html">Quienes somos</a></li>
                 </ul>
-            </div>
-            <ul class="navegacion__lista display_none_sm col-md-7">
-                <li class="navegacion__item"><a href="../index.html">Inicio</a></li>
-                <li class="navegacion__item articulos">
-                    <a href="articulos.html">Artículos</a>
-                    <ul class="articulos__subsecciones">
-                        <li class="articulos__item"><a href="articulos.html#buzos"> Buzos</a></li>
-                        <li class="articulos__item"><a href="articulos.html#remeras"> Remeras</a></li>
-                    </ul>
-                </li>
-                <li class="navegacion__item"><a href="contacto.html">Contacto</a></li>
-                <li class="navegacion__item"><a href="quienes_somos.html">Quienes somos</a></li>
-            </ul>
-            <div class="navegacion__container col-5 offset-1 col-sm-4 col-md-2 offset-md-1">
-                <input type="text" placeholder="Buscar..." class="navegacion__buscador">
-            </div>
-            <div class="navegacion__container col-2 offset-3 offset-sm-4 col-md-1 offset-md-0">
-                <a href="#">
-                    <img src="../imgs/carrito.png" alt="carrito" width="32px"  class="navegacion__carrito">
-                </a>
-            </div>
-        </nav>     
-    </header>
-    <main>
-        <h1 class="display-5"> Nuestra historia</h1>
-        <section class="nuestraHistoria">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus perspiciatis aut deserunt cumque explicabo nobis a, ad accusamus voluptatem temporibus dolorum expedita, est nemo adipisci quasi, illo minus eius!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus perspiciatis aut deserunt cumque explicabo nobis a, ad accusamus voluptatem temporibus dolorum expedita, est nemo adipisci quasi, illo minus eius!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus perspiciatis aut deserunt cumque explicabo nobis a, ad accusamus voluptatem temporibus dolorum expedita, est nemo adipisci quasi, illo minus eius!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus perspiciatis aut deserunt cumque explicabo nobis a, ad accusamus voluptatem temporibus dolorum expedita, est nemo adipisci quasi, illo minus eius!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus perspiciatis aut deserunt cumque explicabo nobis a, ad accusamus voluptatem temporibus dolorum expedita, est nemo adipisci quasi, illo minus eius!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus perspiciatis aut deserunt cumque explicabo nobis a, ad accusamus voluptatem temporibus dolorum expedita, est nemo adipisci quasi, illo minus eius!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus perspiciatis aut deserunt cumque explicabo nobis a, ad accusamus voluptatem temporibus dolorum expedita, est nemo adipisci quasi, illo minus eius!</p>
-        </section>
-    </main>
-    <footer class="footer">
-        <section class="footer__box" id="rrss">
-            <h2 class="footer__headline">Redes Sociales</h2>
-            <ul class="footer__list--position">
-                <li title="Instagram" class="footer__item ">
+                <div class="navegacion__container col-5 offset-1 col-sm-4 col-md-2 offset-md-1">
+                    <input type="text" placeholder="Buscar..." class="navegacion__buscador">
+                </div>
+                <div class="navegacion__container col-2 offset-3 offset-sm-4 col-md-1 offset-md-0">
                     <a href="#">
-                        <img src="../imgs/instagram_icon.png" alt="Instagram" class="footer__img">
+                        <img src="../imgs/carrito.png" alt="carrito" width="32px"  class="navegacion__carrito">
                     </a>
-                </li>
-                <li title="Twitter" class="footer__item ">
-                    <a href="#">
-                        <img src="../imgs/twitter_icon.png" alt="twitter" class="footer__img">
-                    </a>
-                </li>
-                <li title="Facebook" class="footer__item ">
-                    <a href="#">
-                        <img src="../imgs/facebook_icon.png" alt="Facebook" class="footer__img">
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <aside class="help">
-            <h2 class="footer__headline">Ayuda</h2>
-            <ul>
-                <li><a href="#">Terminos y condiciones</a></li>
-                <li><a href="#">Politica privada</a></li>
-            </ul>
-        </aside>
-        <section class="footer__box" id="navegacion">
-            <h2 class="footer__headline">Navegación</h2>
-            <ul class="footer__list footer__list--reduction">
-                <li class="footer__item"><a href="../index.html">Inicio</a></li>
-                <li class="footer__item"><a href="./articulos.html">Artículos</a></li>
-                <li class="footer__item"><a href="./contacto.html">Contacto</a></li>
-                <li class="footer__item"><a href="./quienes_somos.html">Quienes somos</a></li>
-            </ul>
-        </section>
-        <section class="footer__box footer__box--position" id="contacto">
-            <h2 class="footer__headline">¡Contactanos!</h2>
-            <ul class="footer__list">
-                <li><a href="mailto:infontk.ba@gmail.com">infontk.ba@gmail.com</a></li>
-            </ul>
-        </section>
-        <div class="footer__logo">
-        <img src="../imgs/logofooter.jpg" alt="logo" id="footer-logo"> 
-        </div>
-    </footer>
+                </div>
+            </nav>     
+        </header>
+        <main>
+            <h1 class="display-5"> Nuestra historia</h1>
+            <section class="nuestraHistoria">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus perspiciatis aut deserunt cumque explicabo nobis a, ad accusamus voluptatem temporibus dolorum expedita, est nemo adipisci quasi, illo minus eius!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus perspiciatis aut deserunt cumque explicabo nobis a, ad accusamus voluptatem temporibus dolorum expedita, est nemo adipisci quasi, illo minus eius!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus perspiciatis aut deserunt cumque explicabo nobis a, ad accusamus voluptatem temporibus dolorum expedita, est nemo adipisci quasi, illo minus eius!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus perspiciatis aut deserunt cumque explicabo nobis a, ad accusamus voluptatem temporibus dolorum expedita, est nemo adipisci quasi, illo minus eius!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus perspiciatis aut deserunt cumque explicabo nobis a, ad accusamus voluptatem temporibus dolorum expedita, est nemo adipisci quasi, illo minus eius!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus perspiciatis aut deserunt cumque explicabo nobis a, ad accusamus voluptatem temporibus dolorum expedita, est nemo adipisci quasi, illo minus eius!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus perspiciatis aut deserunt cumque explicabo nobis a, ad accusamus voluptatem temporibus dolorum expedita, est nemo adipisci quasi, illo minus eius!</p>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="footer__box footer__box--rrss" id="rrss">
+                <h2 class="footer__headline">Redes Sociales</h2>
+                <ul class="footer__list--rrss">
+                    <li title="Instagram" class="footer__item ">
+                        <a href="#">
+                            <img src="../imgs/instagram_icon.png" alt="Instagram" class="footer__img">
+                        </a>
+                    </li>
+                    <li title="Twitter" class="footer__item ">
+                        <a href="#">
+                            <img src="../imgs/twitter_icon.png" alt="twitter" class="footer__img">
+                        </a>
+                    </li>
+                    <li title="Facebook" class="footer__item ">
+                        <a href="#">
+                            <img src="../imgs/facebook_icon.png" alt="Facebook" class="footer__img">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <aside class="footer__box--help help">
+                <h2 class="footer__headline">Ayuda</h2>
+                <ul>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Politica privada</a></li>
+                </ul>
+            </aside>
+            <section class="footer__box footer__box--nav" id="navegacion">
+                <h2 class="footer__headline">Navegación</h2>
+                <ul class="footer__list footer__list--reduction">
+                    <li class="footer__item"><a href="../index.html">Inicio</a></li>
+                    <li class="footer__item"><a href="./articulos.html">Artículos</a></li>
+                    <li class="footer__item"><a href="./contacto.html">Contacto</a></li>
+                    <li class="footer__item"><a href="./quienes_somos.html">Quienes somos</a></li>
+                </ul>
+            </section>
+            <section class="footer__box footer__box--contacto" id="contacto">
+                <h2 class="footer__headline">¡Contactanos!</h2>
+                <ul class="footer__list">
+                    <li><a href="mailto:infontk.ba@gmail.com">infontk.ba@gmail.com</a></li>
+                </ul>
+            </section>
+            <div class="footer__logo footer__box--logo">
+                <img src="../imgs/logofooter.jpg" alt="logo" id="footer-logo"> 
+            </div>
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 </body>
 </html>

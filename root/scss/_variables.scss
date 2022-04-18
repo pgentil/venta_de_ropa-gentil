@@ -1,9 +1,29 @@
+
+//font
 $font-default: normal normal 1.6rem 'aileronlight';
 
+//colors
+$_black: #000000;
+$_lightrosepink: #d3a7a7;
+$_darkgrey: #474747;
+$_white: white;
+
+//background
 $body-background: fixed url(../imgs/background.jpeg) center/cover;
 
+
+//main
 $margin-main: 3% 5% 0 5%;
 
+//imgs
 $responsive-img-width: auto;
 $responsive-img-height: 100%;
+
+//footer
+$footerminwidth__item__ul: 22px;
+
+
+//animacion
+
+$animaciones: (Descuento: $_lightrosepink, RRSS: $_black);
 

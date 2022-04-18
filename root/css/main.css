@@ -138,6 +138,7 @@ main {
     width: 25%;
     height: auto;
     border-left: 1px solid white;
+    border-right: 1px solid white;
     padding-left: 1px; }
     .navegacion__item--quienesSomos {
       padding-left: 5px; }
@@ -166,7 +167,7 @@ main {
     justify-content: center; }
 
 .navegacionArticulos__subsecciones {
-  width: 25%;
+  width: 24%;
   position: absolute;
   padding: 0;
   display: none;
@@ -175,6 +176,8 @@ main {
 .navegacionArticulos__item {
   width: 100%;
   margin-top: 1rem; }
+  .navegacionArticulos__item:hover {
+    border: 2px solid white; }
 
 .navegacionArticulos:hover .navegacionArticulos__subsecciones {
   display: block;
@@ -650,6 +653,9 @@ main {
   .sell__boxes div:hover ~ .transform1__price, .mainI .masVendidos__boxes div:hover ~ .transform1__price, .articulosGrid__boxes div:hover ~ .transform1__price {
     transform: translateY(1rem);
     transition: transform 2s; }
+  .sell__boxes a:hover h3, .mainI .masVendidos__boxes a:hover h3, .articulosGrid__boxes a:hover h3 {
+    transform: translateY(-1rem);
+    transition: transform 2s; }
   /*.custom-padding-carrito{
         padding-left: 0;
         padding-right: 50px;
@@ -666,6 +672,5 @@ main {
   .nuestraHistoria {
     margin-right: 0; }
   .navegacion__item, .navegacion__item--quienesSomos {
-    display: inline-flex;
     align-items: center;
     height: 36px; } }

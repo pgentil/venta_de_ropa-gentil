@@ -205,10 +205,20 @@
         transition: transform 3s;
     }
 
-    .sell__boxes div:hover ~ .transform1__price{
-        transform: translateY(1rem);
-        transition: transform 2s;
-    }
+    .sell__boxes{
+        div:hover{
+            &~ .transform1__price{
+                transform: translateY(1rem);
+                transition: transform 2s;
+            }
+        } 
+        a:hover{
+            h3{
+                transform: translateY(-1rem);
+                transition: transform 2s;
+            }
+        }
+    } 
 
     /*.custom-padding-carrito{
         padding-left: 0;
@@ -229,7 +239,6 @@
         margin-right: 0;
     }
     .navegacion__item{
-        display: inline-flex;
         align-items: center;
         height: 36px;
     }

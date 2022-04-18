@@ -1,0 +1,62 @@
+@each $name, $backgroundcolor in $animaciones{
+    .animacion#{$name}{
+        animation-name: $name;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 15s;
+        animation-delay: 3s;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        position: absolute;
+        margin-top: 1vh;
+        right: -100%;
+        height: 20vh;
+        min-height: 132px;
+        width: 25vw;
+        border: 3px solid white;
+        z-index: 2;
+        background-color: $backgroundcolor; 
+        text-align: center;
+        font-size: 130%;
+
+        @keyframes #{$name}{
+            0%{
+                right: -100%;
+        
+            }
+            10%{
+                right: -10%;
+                background-color: #474747;
+            }
+            15%{
+                right: 0;
+                background-color: $backgroundcolor;
+            }
+            20%{
+                background-color: #474747;
+            }
+            30%{
+                background-color: $backgroundcolor;
+            }
+            40%{
+                background-color: #474747;
+            }
+            50%{
+                background-color: $backgroundcolor;
+            }
+            60%{
+                right: 0%;
+                background-color: #474747;
+            }
+            70%{
+                background-color: $backgroundcolor;
+            }
+            100%{
+                right: -100%;
+            }
+        }
+    }
+}

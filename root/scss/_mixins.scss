@@ -1,0 +1,21 @@
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin linkNorm ( $text-deco, $color){
+    text-decoration: $text-deco;
+    color: $color;
+}
+
+@mixin gridColRow($column_start, $column_end, $row_start, $row_end){
+    grid-column-start: $column_start;
+    grid-column-end: $column_end;
+    grid-row-start: $row_start;
+    grid-row-end: $row_end;
+}
+
+@mixin animationBox($name1){
+    animation-name: $name1;
+    
+}

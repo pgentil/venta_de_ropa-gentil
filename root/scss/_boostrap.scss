@@ -1,0 +1,38 @@
+
+.dropdown-menu{
+    font-size: 100%;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+
+    &.show{
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+}
+
+.btn{
+    border: 2px solid white;
+    color: white;
+    font-size: 120%;
+    width: 100%;
+    min-width: 80px;
+    &:hover{
+        color: #444649;
+    }
+}
+
+.form-check-input{
+    background-color: black;
+    border-color: white;
+    &:focus{
+        background-color: black;
+        border-color: white;
+    }
+    &:checked{
+        background-color: black;
+        border-color: white;
+    }
+    
+}
+

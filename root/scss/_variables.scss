@@ -7,6 +7,7 @@ $_black: #000000;
 $_lightrosepink: #d3a7a7;
 $_darkgrey: #474747;
 $_white: white;
+$_red: rgb(226, 58, 58);
 
 //background
 $body-background: fixed url(../imgs/background.jpeg) center/cover;
@@ -22,6 +23,8 @@ $responsive-img-height: 100%;
 //footer
 $footerminwidth__item__ul: 22px;
 
+//structures
+$newProducts_alertColor: $_red;
 
 //animacion
 

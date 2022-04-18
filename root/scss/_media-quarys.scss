@@ -24,7 +24,6 @@
         }
 
     }
-
     .mainI{
         .novedad{
             grid-template-columns: 1fr;
@@ -76,18 +75,6 @@
 
 
 @media (max-width: 576px){
-    /*.navegacion{
-        height: 15vh;
-    }
-    .mainI{
-        grid-template-rows: auto auto;
-        .novedad{
-            align-items: end;
-            align-content: stretch;
-        }
-
-
-    }*/
     body h2{
         font-size: calc(16px + 1vw);
     }
@@ -218,14 +205,19 @@
         transition: transform 3s;
     }
 
-    .masVendidos__boxes img:hover ~ .transform1__price{
+    .sell__boxes div:hover ~ .transform1__price{
         transform: translateY(1rem);
         transition: transform 2s;
     }
-    .articulosGrid__boxes img:hover ~ .transform1__price{
+
+    /*.custom-padding-carrito{
+        padding-left: 0;
+        padding-right: 50px;
+    }
+    .articulosGrid__boxes div:hover ~ .transform1__price{
         transform: translateY(1rem);
         transition: transform 2s;
-    }
+    }*/
 }
 
 @media (max-width: 992px){
@@ -235,5 +227,10 @@
     }
     .nuestraHistoria{
         margin-right: 0;
+    }
+    .navegacion__item{
+        display: inline-flex;
+        align-items: center;
+        height: 36px;
     }
 }

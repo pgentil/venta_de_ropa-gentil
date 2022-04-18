@@ -1,9 +1,43 @@
+@charset "UTF-8";
 .sell__boxes, .mainI .masVendidos__boxes, .articulosGrid__boxes {
   text-align: center;
   padding: 0 1px; }
   .sell__boxes img:hover, .mainI .masVendidos__boxes img:hover, .articulosGrid__boxes img:hover {
     transform: scale(1.1);
     transition: transform 2s; }
+
+.relativeSellingImg {
+  position: relative; }
+
+.newProduct__sign {
+  display: none; }
+
+.newProduct {
+  position: relative; }
+  .newProduct img {
+    height: 100%; }
+    .newProduct img:hover ~ .newProduct__sign {
+      transform: scale(1.1) translate(15px, -15px);
+      transition: transform 2s; }
+  .newProduct .newProduct__sign {
+    display: inline-block;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: fit-content2px;
+    height: 10%;
+    background-color: #e23a3a; }
+  .newProduct ::before {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    content: '¡NUEVO!';
+    background-color: #e23a3a;
+    width: fit-content;
+    height: 100%;
+    position: relative;
+    right: 0;
+    z-index: 2; }
 
 html {
   font-size: 62.5%; }
@@ -99,21 +133,24 @@ main {
     height: 100%;
     position: relative;
     margin-bottom: 0; }
-  .navegacion__item {
+  .navegacion__item, .navegacion__item--quienesSomos {
     display: inline-block;
     width: 25%;
-    height: auto; }
-    .navegacion__item a {
+    height: auto;
+    border-left: 1px solid white;
+    padding-left: 1px; }
+    .navegacion__item--quienesSomos {
+      padding-left: 5px; }
+    .navegacion__item a, .navegacion__item--quienesSomos a {
       width: 100%;
       height: auto;
       display: inline-block;
       width: 100%;
       text-align: center;
       transition: 1s; }
-      .navegacion__item a:hover {
+      .navegacion__item a:hover, .navegacion__item--quienesSomos a:hover {
         font-size: larger;
-        border: none;
-        border-bottom: 2px solid white; }
+        border: none; }
   .navegacion__buscador {
     border: none;
     border-bottom: 1px solid white;
@@ -205,8 +242,7 @@ main {
   justify-items: stretch;
   padding: 1% 5% 0 5%; }
   .footer a {
-    color: #5386dd;
-    /* rgb(100, 149, 237) */ }
+    color: #5386dd; }
   .footer__box {
     display: flex;
     align-items: center; }
@@ -327,6 +363,11 @@ main {
     .contacto .formularioContainer .formulario .form-control:focus {
       background-color: black;
       border-color: white; }
+  .contacto .formularioContainer .formulario .form-check {
+    margin-bottom: 10px;
+    align-items: center; }
+    .contacto .formularioContainer .formulario .form-check-label {
+      max-width: 363.75px; }
 
 .nuestraHistoria {
   margin-right: 5rem; }
@@ -488,18 +529,6 @@ main {
     text-align: center; } }
 
 @media (max-width: 576px) {
-  /*.navegacion{
-        height: 15vh;
-    }
-    .mainI{
-        grid-template-rows: auto auto;
-        .novedad{
-            align-items: end;
-            align-content: stretch;
-        }
-
-
-    }*/
   body h2 {
     font-size: calc(16px + 1vw); }
   .mainI .novedad__textbox {
@@ -618,16 +647,25 @@ main {
   .novedad__imgContainer:hover ~ .novedad__textbox {
     transform: translateX(1vw);
     transition: transform 3s; }
-  .masVendidos__boxes img:hover ~ .transform1__price {
+  .sell__boxes div:hover ~ .transform1__price, .mainI .masVendidos__boxes div:hover ~ .transform1__price, .articulosGrid__boxes div:hover ~ .transform1__price {
     transform: translateY(1rem);
     transition: transform 2s; }
-  .articulosGrid__boxes img:hover ~ .transform1__price {
-    transform: translateY(1rem);
-    transition: transform 2s; } }
+  /*.custom-padding-carrito{
+        padding-left: 0;
+        padding-right: 50px;
+    }
+    .articulosGrid__boxes div:hover ~ .transform1__price{
+        transform: translateY(1rem);
+        transition: transform 2s;
+    }*/ }
 
 @media (max-width: 992px) {
   main h1 {
     text-align: center;
     font-size: 140%; }
   .nuestraHistoria {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .navegacion__item, .navegacion__item--quienesSomos {
+    display: inline-flex;
+    align-items: center;
+    height: 36px; } }

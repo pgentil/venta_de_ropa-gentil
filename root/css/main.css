@@ -76,13 +76,18 @@ html {
   font-weight: normal;
   font-style: normal; }
 
+body, html {
+  overflow-x: hidden; }
+
 body {
   font: normal normal 1.6rem "aileronlight";
   background: fixed url(../imgs/background.jpeg) center/cover;
-  color: white;
-  overflow-x: hidden; }
+  color: white; }
 
 .container-fluid {
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
   margin: 0;
   padding: 0; }
 
@@ -109,14 +114,15 @@ main {
   min-height: 200px;
   justify-content: space-evenly;
   align-items: center;
-  background-color: black; }
-
-.header__logoImage {
-  width: auto;
-  height: 100%; }
-
-.header__logoContainer {
-  height: 70%; }
+  background-color: black;
+  z-index: 2;
+  position: sticky;
+  overflow-x: visible; }
+  .header__logoImage {
+    width: auto;
+    height: 100%; }
+  .header__logoContainer {
+    height: 70%; }
 
 .navegacion {
   align-self: stretch;
@@ -187,6 +193,9 @@ main {
 .mainI {
   display: grid;
   margin-top: 5vh; }
+  .mainI h1 {
+    text-align: center;
+    padding-bottom: 40px; }
   .mainI .novedad {
     display: grid;
     border-radius: 10px;
@@ -526,8 +535,9 @@ main {
       text-align: center; }
   .articulosGrid h2, .articulosGrid h3 {
     text-align: center; }
-  .nuestraHistoria {
-    text-align: center; }
+  .nuestraHistoria p {
+    text-align: justify;
+    text-justify: inter-word; }
   .modosDeContacto {
     text-align: center; } }
 

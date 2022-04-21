@@ -21,14 +21,19 @@ html{
 }
 
 //body & container-fluid (boostrap)
+body, html{
+    overflow-x: hidden;
+}
 body{
     font: $font-default;
     background: $body-background;
     color: white;
-    overflow-x: hidden;
 }
 
 .container-fluid{
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -65,14 +70,17 @@ main{
     justify-content: space-evenly;
     align-items: center;
     background-color: black;
-}
-
-.header__logoImage{
-    @include size(auto, 100%)
-}
-
-.header__logoContainer{
-    height: 70%;
+    z-index: 2;
+    position: sticky;
+    overflow-x: visible;
+    &__logo{
+        &Image{
+            @include size(auto, 100%)
+        }
+        &Container{
+            height: 70%;
+        }
+    }
 }
 .navegacion{
     align-self: stretch;
@@ -160,6 +168,10 @@ main{
 .mainI{
     display: grid;
     margin-top: 5vh;
+    h1{ 
+        text-align: center;
+        padding-bottom: 40px;
+    }
     .novedad{
         display: grid;
         border-radius: 10px;

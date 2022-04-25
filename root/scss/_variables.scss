@@ -1,5 +1,6 @@
 
 //font
+$_fontsizeresponsive: calc(1.5rem + .5vh + .2vw);
 $font-default: normal normal 1.6rem 'aileronlight';
 
 //colors
@@ -21,12 +22,12 @@ $responsive-img-width: auto;
 $responsive-img-height: 100%;
 
 //footer
-$footerminwidth__item__ul: 22px;
+$footerminwidth__item__ul: 22px; //variable especifica para un item en el footer
 
 //structures
 $newProducts_alertColor: $_red;
 
-//animacion
+//animacion-map
 
-$animaciones: (Descuento: $_lightrosepink, RRSS: $_black);
+$animaciones: (Descuento: $_lightrosepink, RRSS: $_black); //Este map lo uso para las animaciones que aparecen como avisos en el index y en Contacto 
 

@@ -51,6 +51,11 @@ html {
     padding-right: calc(var(--bs-gutter-x) * .5);
     padding-left: calc(var(--bs-gutter-x) * .5); }
 
+.dropdown-item a {
+  display: inline-block;
+  width: 100%;
+  height: 100%; }
+
 .btn {
   border: 2px solid white;
   color: white;
@@ -58,7 +63,7 @@ html {
   width: 100%;
   min-width: 80px; }
   .btn:hover {
-    color: #444649; }
+    color: #7b7f84; }
 
 .form-check-input {
   background-color: black;
@@ -77,7 +82,8 @@ html {
   font-style: normal; }
 
 body, html {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 100%; }
 
 body {
   font: normal normal 1.6rem "aileronlight";
@@ -89,7 +95,11 @@ body {
   width: 100vw;
   overflow-x: hidden;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  height: 100%; }
 
 ul, ol {
   list-style-type: none; }
@@ -120,7 +130,8 @@ main {
   overflow-x: visible; }
   .header__logoImage {
     width: auto;
-    height: 100%; }
+    height: 100%;
+    min-height: 100px; }
   .header__logoContainer {
     height: 70%; }
 
@@ -142,17 +153,18 @@ main {
   .navegacion__item, .navegacion__item--quienesSomos {
     display: inline-block;
     width: 25%;
-    height: auto;
+    height: 36px;
     border-left: 1px solid white;
     border-right: 1px solid white;
     padding-left: 1px; }
     .navegacion__item--quienesSomos {
-      padding-left: 5px; }
+      padding: 0 9px; }
     .navegacion__item a, .navegacion__item--quienesSomos a {
       width: 100%;
-      height: auto;
-      display: inline-block;
-      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
       transition: 1s; }
       .navegacion__item a:hover, .navegacion__item--quienesSomos a:hover {
@@ -252,6 +264,7 @@ main {
   grid-template-rows: 1fr 1fr 1fr;
   align-items: stretch;
   justify-items: stretch;
+  align-self: flex-end;
   padding: 1% 5% 0 5%; }
   .footer a {
     color: #5386dd; }
@@ -357,7 +370,7 @@ main {
     font-family: 'aileronlight';
     text-decoration: white solid;
     background-color: black;
-    font-size: 120%;
+    font-size: calc(1rem + 2vw);
     color: white;
     width: 20vw; }
   .contacto .formularioContainer .formulario__label {
@@ -416,6 +429,7 @@ main {
   height: 20vh;
   min-height: 132px;
   width: 25vw;
+  max-height: 23vw;
   border: 3px solid white;
   z-index: 2;
   background-color: #d3a7a7;
@@ -463,6 +477,7 @@ main {
   height: 20vh;
   min-height: 132px;
   width: 25vw;
+  max-height: 23vw;
   border: 3px solid white;
   z-index: 2;
   background-color: #000000;
@@ -494,7 +509,7 @@ main {
   100% {
     right: -100%; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .display_none_sm {
     display: none; }
   .header {
@@ -648,9 +663,11 @@ main {
 
 @media (min-width: 577px) {
   .help {
-    padding-top: 10px; } }
+    padding-top: 10px; }
+  .contacto .formularioContainer .formulario__textinput {
+    width: 100%; } }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .display_none_md {
     display: none; }
   .novedad .novedad__img:hover {
@@ -666,14 +683,9 @@ main {
   .sell__boxes a:hover h3, .mainI .masVendidos__boxes a:hover h3, .articulosGrid__boxes a:hover h3 {
     transform: translateY(-1rem);
     transition: transform 2s; }
-  /*.custom-padding-carrito{
-        padding-left: 0;
-        padding-right: 50px;
-    }
-    .articulosGrid__boxes div:hover ~ .transform1__price{
-        transform: translateY(1rem);
-        transition: transform 2s;
-    }*/ }
+  .contacto .formularioContainer .formulario__textinput {
+    width: 20vw;
+    font-size: 120%; } }
 
 @media (max-width: 992px) {
   main h1 {
@@ -684,3 +696,34 @@ main {
   .navegacion__item, .navegacion__item--quienesSomos {
     align-items: center;
     height: 36px; } }
+
+@media (min-width: 1200px) {
+  body p, body h2, body h3, body h1, body h4, body li, body a, body input {
+    font-size: x-large; }
+  .display-5 {
+    font-size: 5rem; }
+  .display-6 {
+    font-size: 4.5rem; }
+  .mainI .novedad {
+    grid-template-columns: auto auto; }
+    .mainI .novedad__textbox {
+      justify-self: center;
+      width: 100%;
+      height: 100%;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      max-width: none; }
+    .mainI .novedad__img {
+      width: auto;
+      height: 60vh;
+      max-height: 400px; }
+  .contacto .formularioContainer .formulario__label {
+    font-size: xx-large; }
+  .animacionDescuento {
+    width: 20vw;
+    height: fit-content; }
+  .animacionRRSS {
+    width: 20vw;
+    height: fit-content; } }

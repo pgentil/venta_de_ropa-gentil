@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     
     .display_none_sm{
         display: none;
@@ -191,9 +191,14 @@
     .help{
         padding-top: 10px;
     }
+    .contacto .formularioContainer .formulario{
+        &__textinput{
+            width: 100%;
+        }
+    }
 }
 
-@media (min-width: 769px){
+@media (min-width: 768px){
     .display_none_md{
         display: none; 
     }
@@ -222,15 +227,12 @@
             }
         }
     } 
-
-    /*.custom-padding-carrito{
-        padding-left: 0;
-        padding-right: 50px;
+    .contacto .formularioContainer .formulario{
+        &__textinput{
+            width: 20vw;
+            font-size: 120%;
+        }
     }
-    .articulosGrid__boxes div:hover ~ .transform1__price{
-        transform: translateY(1rem);
-        transition: transform 2s;
-    }*/
 }
 
 @media (max-width: 992px){
@@ -244,5 +246,50 @@
     .navegacion__item{
         align-items: center;
         height: 36px;
+    }
+}
+
+@media (min-width: 1200px){
+    body{
+        p, h2, h3, h1, h4, li, a, input{
+            font-size:x-large;
+        }
+    }
+    .display-5{
+        font-size: 5rem;
+    }
+    .display-6{
+        font-size: 4.5rem;
+    }
+    .mainI{
+        .novedad{
+            grid-template-columns: auto auto;
+            &__textbox{
+                justify-self: center;
+                @include size(100%, 100%);
+                @include gridColRow(2, 3, 1, 2);
+                max-width: none;
+            }
+            &__img{
+                @include size(auto, 60vh);
+                max-height: 400px;
+            }
+        }
+    }
+    .contacto{
+        .formularioContainer{
+            .formulario{
+                &__label{
+                    font-size: xx-large;
+                }
+            }
+        }
+    }
+    .animacion{
+        @each $item, $value in $animaciones{
+            &#{$item}{
+                @include size(20vw, fit-content)
+            }
+        }
     }
 }

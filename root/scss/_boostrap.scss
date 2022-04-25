@@ -1,14 +1,22 @@
 
-.dropdown-menu{
-    font-size: 100%;
-    background-color: black;
-    width: 100%;
-    text-align: center;
-
-    &.show{
-        padding-right: calc(var(--bs-gutter-x) * .5);
-        padding-left: calc(var(--bs-gutter-x) * .5);
+.dropdown{
+    &-menu{
+        font-size: 100%;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        &.show{
+            padding-right: calc(var(--bs-gutter-x) * .5);
+            padding-left: calc(var(--bs-gutter-x) * .5);
+        }
     }
+    &-item{
+        a{
+            display: inline-block;
+            @include size(100%, 100%)
+        }
+    }
+
 }
 
 .btn{
@@ -18,7 +26,7 @@
     width: 100%;
     min-width: 80px;
     &:hover{
-        color: #444649;
+        color: #7b7f84;
     }
 }
 

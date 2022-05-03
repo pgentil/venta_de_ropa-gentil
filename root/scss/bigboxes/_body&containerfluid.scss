@@ -1,0 +1,19 @@
+body, html, .container-fluid{
+    overflow-x: hidden;
+    height: 100%;
+}
+body{
+    font: $font-default;
+    background: $body-background;
+    color: white;
+}
+
+.container-fluid{
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}

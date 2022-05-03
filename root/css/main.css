@@ -40,6 +40,12 @@
     z-index: 2;
     font-size: 16px; }
 
+@font-face {
+  font-family: 'aileronlight';
+  src: url("../fonts/aileron-light-webfont.woff2") format("woff2"), url("../fonts/aileron-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 html {
   font-size: 62.5%; }
 
@@ -75,12 +81,6 @@ html {
   .form-check-input:checked {
     background-color: black;
     border-color: white; }
-
-@font-face {
-  font-family: 'aileronlight';
-  src: url("../fonts/aileron-light-webfont.woff2") format("woff2"), url("../fonts/aileron-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 
 body, html, .container-fluid {
   overflow-x: hidden;
@@ -201,58 +201,6 @@ main {
   z-index: 2;
   background-color: #000000; }
 
-.mainI {
-  display: grid;
-  margin-top: 5vh; }
-  .mainI h1 {
-    text-align: center;
-    padding-bottom: 40px; }
-  .mainI .novedad {
-    display: grid;
-    border-radius: 10px;
-    height: auto;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 1%;
-    max-width: 100%;
-    padding: 0 10vw 0 10vw; }
-    .mainI .novedad__textbox {
-      padding: 15px;
-      color: white;
-      background-color: #000000;
-      border-radius: 10px;
-      border: 10px solid #444649;
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      max-width: 500px;
-      min-width: 263px; }
-    .mainI .novedad__imgContainer {
-      max-width: 100%;
-      max-height: auto;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 3;
-      height: fit-content; }
-    .mainI .novedad__img {
-      max-width: 100%;
-      height: auto;
-      min-width: 300px; }
-  .mainI .masVendidos {
-    padding-top: 10vh;
-    text-align: center; }
-    .mainI .masVendidos__Container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      text-align: center;
-      padding-top: 5vw; }
-      .mainI .masVendidos__Container a {
-        text-decoration: none;
-        color: white; }
-
 .footer {
   display: grid;
   background-color: white;
@@ -321,6 +269,58 @@ main {
     grid-row-start: 2;
     grid-row-end: 4;
     max-width: 100%; }
+
+.mainI {
+  display: grid;
+  margin-top: 5vh; }
+  .mainI h1 {
+    text-align: center;
+    padding-bottom: 40px; }
+  .mainI .novedad {
+    display: grid;
+    border-radius: 10px;
+    height: auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1%;
+    max-width: 100%;
+    padding: 0 10vw 0 10vw; }
+    .mainI .novedad__textbox {
+      padding: 15px;
+      color: white;
+      background-color: #000000;
+      border-radius: 10px;
+      border: 10px solid #444649;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      max-width: 500px;
+      min-width: 263px; }
+    .mainI .novedad__imgContainer {
+      max-width: 100%;
+      max-height: auto;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      height: fit-content; }
+    .mainI .novedad__img {
+      max-width: 100%;
+      height: auto;
+      min-width: 300px; }
+  .mainI .masVendidos {
+    padding-top: 10vh;
+    text-align: center; }
+    .mainI .masVendidos__Container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      text-align: center;
+      padding-top: 5vw; }
+      .mainI .masVendidos__Container a {
+        text-decoration: none;
+        color: white; }
 
 .contacto a {
   text-decoration: none;
@@ -394,7 +394,8 @@ main {
       max-width: 363.75px; }
 
 .nuestraHistoria {
-  margin-right: 5rem; }
+  margin-right: 5rem;
+  line-height: 40px; }
 
 .articulosGrid {
   display: grid;

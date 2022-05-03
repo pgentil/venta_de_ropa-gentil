@@ -1,0 +1,69 @@
+.footer{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    height:40rem;
+    margin-top: 50px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: stretch;
+    justify-items: stretch;
+    align-self:flex-end;
+    padding: 1% 5% 0 5%;
+    a{
+        color: rgb(83, 134, 221);
+    } 
+    &__box{
+        display: flex;
+        align-items: center;
+        &--contacto{
+            @include gridColRow(1, 2, 3, 4)
+        }
+        &--nav{
+            @include gridColRow(1, 2, 2, 3)
+        }
+    }
+    &__item, &__list, &__headline, &__list--reduction{
+        display:inline-block
+    }
+    &__item{
+        padding: 0 20px;
+    }
+    .footer__list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0 0 0 30px;
+        &--rrss{
+            display: flex;
+            margin: 0;
+            height: 100%;
+            align-items: center;
+            .footer__item{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                text-align: center;
+                min-width: $footerminwidth__item__ul;
+            }
+        }
+    }
+    .help{
+        border: 5px double black;
+        border-radius: 10px;
+        border-top-right-radius: 0 ;
+        font-family: 'aileronlight';
+        @include gridColRow(2, 3, 1, 2);
+        padding-left: 3%;
+        ul{
+            margin:0;
+            padding: 0;
+            min-width: $footerminwidth__item__ul;
+        }
+    }
+    &__logo{
+        justify-self: center;
+        align-self: center;
+        @include gridColRow(auto, auto, 2, 4);
+        max-width: 100%;  
+    }
+}

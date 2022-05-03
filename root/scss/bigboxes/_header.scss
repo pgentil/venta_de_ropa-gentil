@@ -1,0 +1,101 @@
+.header{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: auto;
+    min-height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    z-index: 2;
+    position: sticky;
+    overflow-x: visible;
+    &__logo{
+        &Image{
+            @include size(auto, 100%);
+            min-height: 100px;
+        }
+        &Container{
+            height: 70%;
+        }
+    }
+}
+.navegacion{
+    align-self: stretch;
+    align-items: center;
+    height: 15vh;
+    min-height: 84px;
+    a{
+        text-decoration: none;
+        color:white ;
+    }
+    &__lista{
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        height: 100%;
+        position: relative;
+        margin-bottom: 0;
+    }
+    &__item{
+        display: inline-block;
+        @include size(25%,36px);
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        padding-left: 1px;
+        &--quienesSomos{
+            @extend .navegacion__item;
+            padding: 0 9px;
+        }
+        a{
+            @include size(100%, 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: 1s;
+            &:hover{
+                font-size: larger;
+                border: none;
+            }
+        }   
+    }
+    &__buscador{
+        border: none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        background-color: rgba(255, 0, 0, 0);
+        height: auto;
+        color: white;
+        width: 100%;
+    }
+    &__carrito{
+        position: relative;
+        margin: 0, 1rem, 0, 1rem;
+    }
+    &__container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.navegacionArticulos{
+    &__subsecciones{
+        width: 24%;
+        position: absolute;
+        padding: 0;
+        display: none;
+        font-size: 80%
+    }
+    &__item{
+        width:100%;
+        margin-top: 1rem;
+        &:hover{
+            border: 2px solid white;
+        }
+    }
+    &:hover .navegacionArticulos__subsecciones{
+        display: block;
+        z-index: 2;
+        background-color: #000000;
+    }
+} 

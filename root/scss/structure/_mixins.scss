@@ -13,7 +13,7 @@
     grid-column-end: $column_end;
     grid-row-start: $row_start;
     grid-row-end: $row_end;
-}
+} //Uso este mixin aunque se pueda hacer directamente con grid-areas porque me parece mas comodo
 
 @mixin animationBox($name1){
     animation-name: $name1;

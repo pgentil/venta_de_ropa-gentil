@@ -7,7 +7,7 @@
         text-align: center;
         &.show{
             padding-right: calc(var(--bs-gutter-x) * .5);
-            padding-left: calc(var(--bs-gutter-x) * .5);
+            padding-left: calc(var(--bs-gutter-x) * .5); //use los calculos que estan en el framework para hacer que los dropdown options tengan el mismo tamaño que el boton
         }
     }
     &-item{

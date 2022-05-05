@@ -65,7 +65,7 @@
                 margin-bottom: 10px;
                 align-items: center;
                 &-label{
-                    max-width: 363.75px;
+                    max-width: 363.75px; // esta width es asi de especifica por un tema de estetica, si lo dejas extenderse queda mal.
                 }
             }
         }

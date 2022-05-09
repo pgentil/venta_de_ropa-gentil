@@ -8,22 +8,23 @@
 
 //html
 @import './bigboxes/html';
+//body & container-fluid (boostrap)
+@import './bigboxes/body&containerfluid';
+
 
 // boostrap
 @import './responsive/boostrap';
 
-//body & container-fluid (boostrap)
-@import './bigboxes/body&containerfluid';
 
 //etiquetas generales
 @import './details/general';
-
 //scrollbar
 @import './details/webkit-scrollbar';
+//animaciones
+@import './details/animations';
 
 //header
 @import './bigboxes/header';
-
 //footer
 @import './bigboxes/footer';
 
@@ -31,15 +32,13 @@
 @import './pages/index';
 //contacto
 @import './pages/contacto';
-
 //nuestra historia
 @import './pages/nuestraHistoria';
-
 //articulos
 @import './pages/articulos';
 
-//animaciones
-@import './details/animations';
+
+
 //themes
 @import './responsive/themes';
 //media quarys
